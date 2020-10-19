@@ -13262,9 +13262,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Shown above, as the same distribution gets summed over 5 days (blue, orange, green, red and finaly pruple), the distribution is spread across the x axis and the mean is shifted up. The overall shape does not change. This makes sense because as days of data are added any observers would expect to see more and more unlikly results and nothing is changed about the source of the data so there is no reason the shape of the distribution would change as more data is added.</p>
-<p>The way I think about this result intuitivly is like this:</p>
-<p>If I were to sit and record the heights of people as the stepped off a train, already knowing how height is distributed across humans (in the case of a poisson distribution more likely tall than short), I would predict that out of the small sample size of one train car I would be much more likely to record passangers of heights around the mean human height. But if I kept watching as more trains pulled in and more train cars emptied I would expect this larger sample size to contain more passangers further from the mean height than i would have found in just one train car. Nothing has changed about how human height is distributed, I've simply given myself more time to record less common occurances. This results in a distribution that is the same shape but larger in scale and with a new mean that is representitive of the increased chance of measuring less probable results.</p>
+<p>Shown above, as the same distribution gets summed over 5 days (blue, orange, green, red and finally purple), the distribution is spread across the x axis and the mean is shifted up. The overall shape does not change. This makes sense because as days of data are added any observers would expect to see more and more unlikly results and nothing is changed about the source of the data so there is no reason the shape of the distribution would change as more data is added.</p>
+<p>The way I think about this result intuitively is like this:</p>
+<p>If I were to sit and record the heights of people as they stepped off a train, already knowing how height is distributed across humans (in the case of a poisson distribution more likely tall than short), I would predict that out of the small sample size of one train car I would be much more likely to record passangers of heights around the mean human height. But if I kept watching as more trains pulled in and more train cars emptied I would expect this larger sample size to contain more passangers further from the mean height than i would have found in just one train car. Nothing has changed about how human height is distributed, I've simply given myself more time to record less common occurances. This results in a distribution that is the same shape but larger in scale and with a new mean that is representitive of the increased chance of measuring less probable results.</p>
 <p>But, the story is different when instead of summing over days, the distribution is averaged.</p>
 
 </div>
@@ -13604,7 +13604,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Version 1) As calculated above, with the background distribution ive used, a signal of 18.2 does have an assosiated sigma value above 5... So technicly I can claim a discovery.</p>
+<p>Version 1) As calculated above, with the background distribution ive used, a signal of 18.2 does have an assosiated sigma value above 5... So technically I can claim a discovery.</p>
 
 </div>
 </div>
@@ -13647,7 +13647,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Version 2) statistical question: " given the same background distribution, but with 10,000 trials instead of one, how does the probability and sigma of the hypothetical measuremnt change with the added trials.?"</p>
-<p>As calculated above, with the background ive used applied over 10000 trials, a signal of 18.2 no longer has an assosiated sigma value of 5... Despite # of trials being the only change, I can no longer claim a discovery.</p>
+<p>As calculated above, with the background ive used applied over 10000 trials, a signal of 18.2 no longer has an associated sigma value of 5 but rather 3.2178. Despite 10k trials being the only change, I can no longer claim a discovery.</p>
 
 </div>
 </div>
@@ -13697,7 +13697,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Working backwards i found that 5 sigma on a normal distribution is assosiated with a probability of 0.00000028666. Using this i can work backwards further to find the signals that would produce this probability in each version of the experiemnt:</p>
+<p>Working backwards i found that 5 sigma on a normal distribution is associated with a probability of 0.00000028666. Using this i can work backwards further to find the signals that would produce this probability in each version of the experiment:</p>
 
 </div>
 </div>
@@ -13781,7 +13781,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>C) This result tells us that the signal needs to be 20% brighter for discovery with a trial factor of 10,000. This is a notable difference but suprisingly small. This small sensitivity penality has more to do with the exponential dropoff of probability as you move away from the mean than anything else. Even with a large trial factor, its hard to change the probabilites at the extremes of the distribution, and this make sit hard to change the sigma.</p>
+<p>C) This result tells us that the signal needs to be 20% brighter for discovery with a trial factor of 10,000. This is a notable difference but suprisingly small. This small sensitivity penality has more to do with the exponential dropoff of probability as you move away from the mean than anything else. Even with a large trial factor, its hard to change the probabilites at the extremes of the distribution, and this makes it hard to change the sigma.</p>
 
 </div>
 </div>
@@ -13789,7 +13789,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>D) AS calculated below, increasing the trial factor to 1 million only changes the sigma threshold by 1.5, only 7%</p>
+<p>D) As calculated below, increasing the trial factor to 1 million only changes the sigma threshold by 1.5, only 7%</p>
 
 </div>
 </div>
@@ -13866,7 +13866,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Extra:</p>
-<p>THe shape of the curve could effect the sensitivity greatly. The first example that comes to mind is a heavily skewed distribution like the lognormal one shown earlier in the lab. The higher proabbilities streached across the x axis in one diretion could be more effected by the proabbility compounding effects of more trials. Definetly more effected than the exponentialy decreasing probabilites at the extremes of a gaussian.</p>
+<p>The shape of the curve could effect the sensitivity greatly. The first example that comes to mind is a heavily skewed distribution like the lognormal one shown earlier in the lab. The higher proabbilities streached across the x axis in one diretion could be more effected by the proabbility compounding effects of more trials. Definetly more effected than the exponentialy decreasing probabilites at the extremes of a gaussian.</p>
 
 </div>
 </div>
